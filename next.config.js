@@ -4,6 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
+    domains: ["cdn.sanity.io"],
     remotePatterns: [
       {
         hostname: "i.imgur.com",

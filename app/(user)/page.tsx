@@ -23,7 +23,7 @@ export default async function Home() {
   const posts = await client.fetch(query);
 
   return (
-    <main className='flex bg-white min-h-screen flex-col items-center justify-between p-24'>
+    <main className='flex bg-white min-h-screen flex-col items-center justify-between p-4'>
       {previewData() ? (
         <PreviewSuspense
           fallback={
@@ -32,11 +32,9 @@ export default async function Home() {
             </div>
           }
         >
-          <p>We are in Preview</p>
           {/* <PreviewBlogList query={query} /> */}
         </PreviewSuspense>
       ) : (
-        // <p>We are not in preview mode.</p>
         <BlogList posts={posts} />
       )}
     </main>
