@@ -1,0 +1,18 @@
+{
+  "root": true,
+  "project": {
+    "name": "BLOGGING_APP",
+    "basePath": "/studio"
+  },
+  "api": {
+    "projectId": "l0nk1bmg",
+    "dataset": "production"
+  },
+  "plugins": ["@sanity/production-preview"],
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema.js"
+    }
+  ]
+}

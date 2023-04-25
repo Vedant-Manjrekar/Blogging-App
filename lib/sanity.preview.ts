@@ -10,5 +10,4 @@ function onPublicAccessOnly() {
 export const usePreview = definePreview({
   projectId,
   dataset,
-  onPublicAccessOnly,
 });

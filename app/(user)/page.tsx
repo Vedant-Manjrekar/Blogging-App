@@ -32,7 +32,7 @@ export default async function Home() {
             </div>
           }
         >
-          {/* <PreviewBlogList query={query} /> */}
+          <PreviewBlogList query={query} />
         </PreviewSuspense>
       ) : (
         <BlogList posts={posts} />
