@@ -25,16 +25,17 @@ export default async function Home() {
   return (
     <main className='flex bg-white min-h-screen flex-col items-center justify-between p-4'>
       {previewData() ? (
-        <PreviewSuspense
-          fallback={
-            <div role='status' className=''>
-              Loading..
-            </div>
-          }
-        >
-          <PreviewBlogList query={query} />
-        </PreviewSuspense>
+        ""
       ) : (
+        // <PreviewSuspense
+        //   fallback={
+        //     <div role='status' className=''>
+        //       Loading..
+        //     </div>
+        //   }
+        // >
+        //   <PreviewBlogList query={query} />
+        // </PreviewSuspense>
         <BlogList posts={posts} />
       )}
     </main>
